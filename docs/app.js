@@ -26,6 +26,7 @@ $('navigation').querySelectorAll('a').forEach(link => link.addEventListener('cli
 document.addEventListener('keydown', event => {
   if (event.key === 'Escape') {
     menuButton.setAttribute('aria-expanded', 'false');
+    menuButton.setAttribute('aria-label', '메뉴 열기');
     $('navigation').classList.remove('open');
   }
 });
